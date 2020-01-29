@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E170293423E1286300202151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170293323E1286300202151 /* AppDelegate.swift */; };
-		E170293623E1286300202151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170293523E1286300202151 /* ViewController.swift */; };
 		E170293923E1286300202151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E170293723E1286300202151 /* Main.storyboard */; };
 		E170293B23E1286900202151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E170293A23E1286900202151 /* Assets.xcassets */; };
 		E170293E23E1286900202151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E170293C23E1286900202151 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		E170293023E1286300202151 /* Rainbow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E170293323E1286300202151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E170293523E1286300202151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E170293823E1286300202151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E170293A23E1286900202151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E170293D23E1286900202151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,45 @@
 		E170293223E1286300202151 /* Rainbow */ = {
 			isa = PBXGroup;
 			children = (
-				E170293323E1286300202151 /* AppDelegate.swift */,
-				E170293523E1286300202151 /* ViewController.swift */,
-				E170293723E1286300202151 /* Main.storyboard */,
-				E170293A23E1286900202151 /* Assets.xcassets */,
-				E170293C23E1286900202151 /* LaunchScreen.storyboard */,
+				E170294823E12D0B00202151 /* Model */,
+				E170294723E12CC800202151 /* Views */,
+				E170294623E12CAC00202151 /* View Controllers */,
+				E170294523E12C0900202151 /* Resources */,
 				E170293F23E1286A00202151 /* Info.plist */,
 			);
 			path = Rainbow;
+			sourceTree = "<group>";
+		};
+		E170294523E12C0900202151 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E170293323E1286300202151 /* AppDelegate.swift */,
+				E170293A23E1286900202151 /* Assets.xcassets */,
+				E170293C23E1286900202151 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E170294623E12CAC00202151 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E170294723E12CC800202151 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E170293723E1286300202151 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E170294823E12D0B00202151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +164,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E170293623E1286300202151 /* ViewController.swift in Sources */,
 				E170293423E1286300202151 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +310,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4487ZJU795;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RobVance.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +329,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4487ZJU795;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RobVance.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
