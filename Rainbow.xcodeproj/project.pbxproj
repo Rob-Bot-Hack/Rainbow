@@ -11,6 +11,9 @@
 		E170293923E1286300202151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E170293723E1286300202151 /* Main.storyboard */; };
 		E170293B23E1286900202151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E170293A23E1286900202151 /* Assets.xcassets */; };
 		E170293E23E1286900202151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E170293C23E1286900202151 /* LaunchScreen.storyboard */; };
+		E170294A23E12EF000202151 /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170294923E12EF000202151 /* ColorsTableViewController.swift */; };
+		E170294C23E12F5D00202151 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170294B23E12F5D00202151 /* ColorDetailViewController.swift */; };
+		E170294E23E1361100202151 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170294D23E1361100202151 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		E170293A23E1286900202151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E170293D23E1286900202151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E170293F23E1286A00202151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E170294923E12EF000202151 /* ColorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
+		E170294B23E12F5D00202151 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
+		E170294D23E1361100202151 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 		E170294623E12CAC00202151 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E170294923E12EF000202151 /* ColorsTableViewController.swift */,
+				E170294B23E12F5D00202151 /* ColorDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 		E170294823E12D0B00202151 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E170294D23E1361100202151 /* Color.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E170294C23E12F5D00202151 /* ColorDetailViewController.swift in Sources */,
+				E170294E23E1361100202151 /* Color.swift in Sources */,
 				E170293423E1286300202151 /* AppDelegate.swift in Sources */,
+				E170294A23E12EF000202151 /* ColorsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4487ZJU795;
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,8 +342,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4487ZJU795;
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
